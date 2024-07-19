@@ -1,2 +1,36 @@
+* {
+    margin: 1%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+}
 
+.container {
+    display: flex;
+}
+
+.information {
+    flex: 1;
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.table {
+    width: 100%;
+padding: 30px;
+background-color:rgb(255, 255, 255);
+border-collapse: separate;
+}
+
+.caption {
+font-size: 20px;
+font-style: italic;
+font-weight: 500px;
+}
   
+.map {
+    flex: 3; 
+    padding: 10px;
+}
