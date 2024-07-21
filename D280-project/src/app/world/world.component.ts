@@ -1,12 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-world',
-  standalone: true,
-  imports: [],
   templateUrl: './world.component.html',
-  styleUrl: './world.component.css'
+  styleUrls: ['./world.component.css']
 })
-export class WorldComponent {
-  title = 'World Component';
+export class WorldComponent implements OnInit {
+  ngOnInit(): void {
+    let svgPaths = document.querySelectorAll<SVGPathElement>('path');
+    svgPaths.forEach(svgCountry => {
+      svgCountry.addEventListener('mouseover', event => {
+        const path = event.target as SVGPathElement;
+        if (path) {
+          path.style.fill = 'rgb(98, 145, 197)';
+        }
+      });
+
+      svgCountry.addEventListener('mouseleave', event => {
+        const path = event.target as SVGPathElement;
+        if (path) {
+          path.style.fill = '';
+        }
+      });
+    });
+  }
 }
