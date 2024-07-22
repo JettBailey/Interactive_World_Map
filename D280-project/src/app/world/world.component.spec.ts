@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { WorldComponent } from './world.component';
 
 describe('WorldComponent', () => {
@@ -11,13 +10,12 @@ describe('WorldComponent', () => {
       imports: [WorldComponent]
     })
     .compileComponents();
-
     fixture = TestBed.createComponent(WorldComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('tests', () => {
     expect(component).toBeTruthy();
   });
 });

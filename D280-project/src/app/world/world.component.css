@@ -1,8 +1,9 @@
 * {
-    margin: 1%;
+    margin: 0%;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 40px;
+    background-color: rgb(255, 255, 255);
 }
 
 .container {
@@ -11,26 +12,28 @@
 
 .text {
     flex: 1;
-    
-    display: flex;
     justify-content: start;
     align-items: center;
+    text-wrap: nowrap;
+    font-size: 16px;
+    padding-top: 50px;
 }
 
 .table {
-    width: 100%;
-padding: 30px;
-background-color:rgb(98, 145, 197);
+width: 350px;
+padding: 5%;
+background-color:rgb(255, 255, 255);
 border-collapse: separate;
 }
 
 caption {
-font-size: 20px;
+font-size: 40px;
 font-style: italic;
-
+color: rgb(36, 77, 124);
+padding-bottom: 15px;
 }
   
 .map {
-    flex: 3; 
+    flex: 5; 
     padding: 10px;
 }
